@@ -114,3 +114,62 @@ nav ul li{
     font-size:14px ;
 }
 }
+
+/* plants cart section */
+.plant-container{
+    margin-top: 120px;
+}
+.plant-title{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Noto Serif';
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.plant-subtitle{
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 49px;
+}
+.cart-img{
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+.cart-title{
+    color: rgb(17, 17, 17);
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 500;
+}
+.plant-price{
+    color: rgb(17, 17, 17);
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 700;
+}
+.cart-btn{
+    border: none;
+    background: rgb(233, 90, 8);
+    width: 100%;
+    padding: 26px 50px 26px 50px;
+    margin-top: 5px ;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 600;
+    color:rgb(255, 255, 255) ;    
+}
+.cart-list{
+    display: grid;
+    text-align: center;
+    gap: 20px;
+}
+.cart-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
