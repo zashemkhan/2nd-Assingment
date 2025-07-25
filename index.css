@@ -498,3 +498,15 @@ nav ul li{
         padding: 15px;   
     }
 }
+/* footer section */
+.Features-link ul a{
+     text-decoration: none;
+}
+.Features-link ul li{
+    list-style: none;
+
+}
+.Features-link{
+    display: flex;
+    gap: 50px;
+}
