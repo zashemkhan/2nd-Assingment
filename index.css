@@ -13,6 +13,17 @@ body{
      background-color: rgb(245, 248, 255);
 }
 
+.nav-list:hover,
+.shop-now:hover,
+.Features-link-item:hover,
+.cart-btn:hover,
+.subscribe-btn:hover{
+    /* background-color: aquamarine; */
+    color: rgb(0, 0, 0);
+    opacity: 1.85;
+    transition: all 0.3s;
+}
+
 /* nav section */
 .nav-container{
     margin-top: 2.7rem;
@@ -84,14 +95,14 @@ nav ul li{
 }
 .hero-title{
     font-family: 'Noto Serif'; 
-    font-size: 65px;
+    font-size: 4rem;
     font-weight: 700;
     color: rgb(0, 0, 0);
 }
 .hero-description{
     color:rgba(0, 0, 0, 0.5) ;
     font-family: 'Inter';
-    font-size: 22px;
+    font-size: 1.37rem;
     font-weight: 400;
     margin-top: 13px;
 }
@@ -107,7 +118,7 @@ nav ul li{
 }
 .hero-title{
     margin-top: 28px;
-    font-size: 22px;
+    font-size: 1.37rem;
 }
 .hero-container{
     padding: 0 16px;
@@ -125,14 +136,14 @@ nav ul li{
     color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Noto Serif';
-    font-size: 50px;
+    font-size: 3.12rem;
     font-weight: 700;
     margin-bottom: 16px;
 }
 .plant-subtitle{
     text-align: center;
     font-family: 'Inter';
-    font-size: 22px;
+    font-size: 1.37rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 49px;
@@ -145,13 +156,13 @@ nav ul li{
 .cart-title{
     color: rgb(17, 17, 17);
     font-family: 'Inter';
-    font-size: 22px;
+    font-size: 1.37rem;
     font-weight: 500;
 }
 .plant-price{
     color: rgb(17, 17, 17);
     font-family: 'Inter';
-    font-size: 22px;
+    font-size: 1.37rem;
     font-weight: 700;
 }
 .cart-btn{
@@ -168,12 +179,12 @@ nav ul li{
 .cart-list{
     display: grid;
     text-align: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 .cart-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 20px;
+    gap: 1.25rem;
 }
 /* plants cart section responsive  */
 @media screen and (max-width:576px) {
@@ -183,11 +194,11 @@ nav ul li{
 .cart-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+     gap: 1.25rem;
     padding: 0 16px;
 }
 .plant-title{
-    font-size: 24px;
+    font-size: 1.5rem;
      margin-bottom: 0px;
 }
 .plant-subtitle{
@@ -215,7 +226,7 @@ nav ul li{
     margin-bottom: 133px;
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 3.75rem;
     position: relative;
 }
 .f-l-container{
@@ -301,7 +312,7 @@ nav ul li{
 .card-layout-container1{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    row-gap: 20px;
+    row-gap: 1.2rem;
     height: 423px;
    
 }
@@ -330,7 +341,7 @@ nav ul li{
     font-size: 1.25rem;
     font-weight: 700;
 }
-.card-layout1 p{
+.shop-now{
     position: absolute;
     top: 60%;
     left: 40%;
@@ -354,9 +365,9 @@ nav ul li{
     font-size: 1.25rem;
     font-weight: 700;
 }
-.card-layout2 p{
+.card-layout2 .shop-now{
     position: absolute;
-  top: 60%;
+    top: 60%;
     left: 42%;
     background: transparent;
     text-decoration: underline;
@@ -385,14 +396,14 @@ nav ul li{
     font-size: 2.45rem;
     font-weight: 700;
 }
-.card-layout-container2 p{
+.card-layout-container2 .shop-now{
     position: absolute;
     top: 58%;
     left: 38%;
     background: transparent;
     text-decoration: underline;
     text-underline-position: under;
-    font-family: Inter;
+    font-family: 'Inter';
    font-size: 1.9rem;
    font-weight: 600;
 }
@@ -416,8 +427,8 @@ nav ul li{
     .card-layout-container2 h3{
         font-size: 1.25rem;
     }
-    .card-layout-container2 p{
-        font-size: 16px;
+    .card-layout-container2 .shop-now{
+        font-size: 1rem;
     }
     .deal-section-title{
         font-size: 1.5rem;
@@ -431,7 +442,7 @@ nav ul li{
 
 /* join section */
 .join-container{
-     margin:120px 0 200px;
+     margin-top:120px;
     background-image: url(./assets/news-letter-bg.png);
     width: 100%;
     height: 533px;
@@ -483,9 +494,10 @@ nav ul li{
     .join-container{
         width: 100%;
         height:275px;
+        margin-top: 44px;
     }
     .join-title{
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 23px;
          margin-top: 20px;
     }
@@ -499,14 +511,56 @@ nav ul li{
     }
 }
 /* footer section */
+.footer-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Inter';
+    font-size: 1.37rem;
+    font-weight: 400;
+    max-width: 359px ;
+}
+.nav-logo{
+    margin-bottom: 16px;
+}
+.Features-link-item{
+       color: rgb(107, 114, 128);
+       font-family: Inter;
+       font-size: 1rem;
+       font-weight: 400;   
+}
+.footer-section{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
 .Features-link ul a{
      text-decoration: none;
 }
 .Features-link ul li{
     list-style: none;
-
+    margin-bottom: 32px;
 }
 .Features-link{
     display: flex;
-    gap: 50px;
+    gap: 110px;
+}
+.icons-img{
+   width: 24px;
+   height: 24px;
+}
+.icons{
+     display: flex;
+     gap: 24px;
+}
+/* footer section responsive */
+@media screen and (max-width:576px){
+    .footer-section{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .Features-link{
+    flex-direction: column;
+    gap: 0;
+    }
 }
