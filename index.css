@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
 }
-ul {
+.ul-container {
     display: flex;
     gap: 45px;
 }
@@ -28,14 +28,14 @@ ul {
     font-size: 1rem;
     font-weight: 700;
 }
-ul li:nth-child(4) .nav-list{
+.ul-container li:nth-child(4) .nav-list{
        font-weight: 400;
        display: flex;
        gap: 5px;
        align-items: center;
 }
-ul li:nth-child(2) .nav-list,
-ul li:nth-child(3) .nav-list {
+.ul-container li:nth-child(2) .nav-list,
+.ul-container li:nth-child(3) .nav-list {
   color:rgb(137, 135, 161);
   font-weight: normal;
 }
@@ -45,9 +45,9 @@ nav ul li{
 
 /* nav section mobile responsive  */
 @media screen and (max-width:576px) {
-     ul li:nth-child(1),
-     ul li:nth-child(2),
-     ul li:nth-child(3){
+     .ul-container li:nth-child(1),
+     .ul-container li:nth-child(2),
+     .ul-container li:nth-child(3){
           display:none;
      }
     .nav-container{
@@ -59,7 +59,7 @@ nav ul li{
         max-width: 70px;
         height: auto;
     }
-    ul{
+    .ul-container{
         gap: 20px;
     }
 }
@@ -185,10 +185,88 @@ nav ul li{
 }
 .plant-title{
     font-size: 24px;
-     margin-bottom: 16px;
+     margin-bottom: 0px;
 }
 .plant-subtitle{
     font-size: 14px;
     margin:0px 28px 28px;
+}
+}
+
+/* flower & plant lover section */ */
+.flower-img {
+  width: 100%;
+  height: auto;   
+}
+.badge-img {
+  position: absolute;
+  top: -130px;
+  left: 343px;
+  background: transparent;
+  width: 286px;
+  height: auto;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+.plants-lover-section{
+    margin-top: 210px;
+    margin-bottom: 133px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+}
+.f-l-container{
+    flex: 1;
+    margin-bottom:50px ;
+}
+.f-l-title{
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Serif';
+    font-size: 3.12rem;
+    font-weight: 700;
+    padding:2.5rem 0;
+    
+}
+.list-item{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Inter';
+    font-size:1.37rem;
+    font-weight: 400;
+    margin-left: 30px;
+}
+.f-l-list{
+    display: flex;
+    flex-direction: column;
+    gap: 3.12rem;
+}
+
+/* flower lover section mobile responsive  */
+@media screen and (max-width:576px) {
+.badge-img{
+    display: none;
+}
+.flower-img{
+    width: 100%;
+}
+.plants-lover-section{
+    margin-top: 41px;
+    margin-bottom: 18px;
+}
+.plants-lover-section{
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1.12rem;
+    margin-bottom: 143px;
+}
+.f-l-container{
+    margin-top: 2px;
+}
+.f-l-title{
+   font-size: 1.5;
+   margin-bottom: 20px;
+   padding: 0;
+}
+ .list-item {
+     font-size: 14px;
 }
 }
