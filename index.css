@@ -559,6 +559,9 @@ nav ul li{
         margin-left: 20px;
         margin-bottom: 50px;
     }
+    .footer-description{
+        font-size: 1rem;
+    }
     .Features-link{
     flex-direction: column;
     gap: 0;
